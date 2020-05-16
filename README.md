@@ -153,7 +153,7 @@
 
    定义一个控制器，用于返回数据给前端展示，支持查询功能。
 
-   用集合的filter方法设置过滤条件来实现查询功能。
+   利用Java 8 Stearm数据流新特性，filter方法设置过滤条件来实现查询功能，sorted方法实现排序。
 
    ```java
    @Controller
@@ -170,20 +170,20 @@
        @RequestMapping("/getData")
        @ResponseBody
        public List<comfirmedCase> getData(){
-           return getDataService.getComfirmedCaseList();
+           return getDataService.getComfirmedCaseList().stream().sorted(Comparator.comparing(comfirmedCase::getTotal).reversed()).collect(Collectors.toList());
        }
    
        @RequestMapping("/search")
        @ResponseBody
        public List<comfirmedCase> search(String country){
            if(country.equals(""))
-               return getDataService.getComfirmedCaseList();
+               return getDataService.getComfirmedCaseList().stream().sorted(Comparator.comparing(comfirmedCase::getTotal).reversed()).collect(Collectors.toList());
            else
                return getDataService.getComfirmedCaseList().stream().filter(s->s.getCountry().equals(country)).collect(Collectors.toList());
        }
    }
    ```
-
+   
    
 
 7. 单元测试
@@ -216,10 +216,12 @@
 
    前端使用Vue渲染引擎和Element-UI组件，支持排序功能。
 
-   <div align=center>
+   利用Echarts结合百度地图实现数据可视化
+   
+<div align=center>
        <img src="https://gitee.com/zimomo333/SpringBoot_Exp3_COVID/raw/master/picture/index.png"></div>
 
-   
+
 
    查询功能
 
