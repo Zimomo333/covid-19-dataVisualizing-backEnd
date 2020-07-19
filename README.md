@@ -1,16 +1,3 @@
-## 东莞理工学院网络空间安全学院
-
-### 课程名称：企业级开发框架专题　　　学期：2020春季
-
-<table style="width: 100%;">
-    <tr/><td>实验名称</td><td colspan="3">全球新型冠状病毒实时数据统计应用程序的设计与实现</td><td>实验序号</td><td>三</td></tr>
-    <tr/><td>姓　　名</td><td>梁梓豪</td><td>学　　号</td><td>201741404139</td><td>班    级</td><td>17软卓1班</td></tr>
-    <tr/><td>实验地点</td><td></td><td>实验日期</td><td>2020/05/11</td><td>指导老师</td><td>黎志雄</td></tr>
-    <tr/><td rowspan="2">教师评语</td><td  rowspan="2" colspan="3"></td><td>评阅老师</td><td></td></tr>
-    <tr><td>成绩(百分制)</td><td></td></tr>
-    <tr/><td>同组同学</td><td colspan="5">无</td></tr>
-</table>
-
 ### 一、实验目的
 
 1. 掌握使用Spring框架自带的RestTemplate工具类爬取网络数据；
