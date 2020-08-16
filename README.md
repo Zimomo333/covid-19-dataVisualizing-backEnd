@@ -1,19 +1,26 @@
-### 一、实验目的
+# 全球疫情数据统计系统
 
-1. 掌握使用Spring框架自带的RestTemplate工具类爬取网络数据；
-2. 掌握使用Spring框架自带的计划任务功能；
-3. 掌握使用Apache Commons CSV组件解释CSV文件；
-4. 掌握Java 8的Stream API处理集合类型数据；
-5. 了解使用模板引擎或前端框架展示数据。
+### 一、项目技术
 
-### 二、实验环境
+1. 使用Spring的RestTemplate工具类爬取网络数据；
+2. Spring计划任务功能；
+3. Apache Commons CSV组件解释CSV文件；
+4. Java 8的Stream API处理集合类型数据；
+5. Vue.js前端框架
+
+5. 百度地图 + Echarts 绘制疫情分布地图
+
+6. Element-UI 表格实现数据搜索、排序
+
+### 二、项目环境
 
 1. JDK 1.8或更高版本
 2. Maven 3.6+
 3. IntelliJ IDEA
 4. commons-csv 1.8+
+5. Vue.js 2.6
 
-### 三、实验任务
+### 三、项目流程
 
 1. 创建Spring Boot项目，添加功能模块：spring MVC、lombok、commons-csv。
 
@@ -196,8 +203,9 @@
    ```
 
    <div align=center>
-       <img src="https://gitee.com/zimomo333/SpringBoot_Exp3_COVID/raw/master/picture/test.png"></div>
+       <img src="https://raw.githubusercontent.com/Zimomo333/covid-19-dataVisualizing-backEnd/master/picture/test.png"></div>
 
+   
    
 8. 前端展示
 
@@ -206,11 +214,12 @@
    利用Echarts结合百度地图实现数据可视化
    
 <div align=center>
-       <img src="https://gitee.com/zimomo333/SpringBoot_Exp3_COVID/raw/master/picture/index.png"></div>
+       <img src="https://raw.githubusercontent.com/Zimomo333/covid-19-dataVisualizing-backEnd/master/picture/index.png"></div>
+
 
 
 
    查询功能
 
    <div align=center>
-       <img src="https://gitee.com/zimomo333/SpringBoot_Exp3_COVID/raw/master/picture/search.png"></div>
+       <img src="https://raw.githubusercontent.com/Zimomo333/covid-19-dataVisualizing-backEnd/master/picture/search.png"></div>
